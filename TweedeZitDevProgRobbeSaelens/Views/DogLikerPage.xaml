@@ -18,8 +18,8 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="btnFavorite" Padding="30" Text="Add"  CornerRadius="20"  Clicked="Button_Favourite_Clicked_1"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" />
-                <Button x:Name="btnRandom" Margin="8" Text="Next"  CornerRadius="20" Padding="30" Clicked="Button_RandomClicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="1" />
+                <Button x:Name="btnFavorite" Padding="30" Text="Add" BackgroundColor="Green" TextColor="White"  CornerRadius="20"  Clicked="Button_Favourite_Clicked_1"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" />
+                <Button x:Name="btnRandom" Text="Next"  CornerRadius="20" Padding="30" Clicked="Button_RandomClicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="1" />
 
             </Grid>
         </StackLayout>

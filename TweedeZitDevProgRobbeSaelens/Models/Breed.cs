@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 using Newtonsoft.Json;
@@ -40,8 +41,7 @@ namespace TweedeZitDevProgRobbeSaelens.Models
             [JsonProperty(propertyName: "image")]
             public Image image { get; set; }
 
-
-            public class Height
+        public class Height
             {
                 [JsonProperty(propertyName: "imperial")]
                 public string Imperial { get; set; }

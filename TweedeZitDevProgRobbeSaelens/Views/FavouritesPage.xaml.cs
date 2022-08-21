@@ -25,7 +25,6 @@ namespace TweedeZitDevProgRobbeSaelens.Views
         public async void LoadData()
         {
             lvwOverview.ItemsSource = await DogRepository.GetAllFavouritesAsync();
-            lblCounter.Text = "1" ;
 
             RefreshView refreshView = new RefreshView();
             ICommand refreshCommand = new Command(() =>

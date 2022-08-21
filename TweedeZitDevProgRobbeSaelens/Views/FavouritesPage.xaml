@@ -22,7 +22,7 @@
                     </CarouselView.ItemTemplate>
                 </CarouselView>
             </RefreshView>
-            <Label x:Name="lblCounter" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" />
+            <Label Text="Swipe between your liked dogs!" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" />
             <IndicatorView x:Name="indicatorView"
                    IndicatorColor="#aeb0b5"
                    SelectedIndicatorColor="#105bd8"
