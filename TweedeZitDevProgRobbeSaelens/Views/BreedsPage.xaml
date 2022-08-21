@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Breeds" Icon="Bark.png"
+             x:Class="TweedeZitDevProgRobbeSaelens.Views.BreedsPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowSpacing="0" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0"    />
+                <Label Text="All breeds" TextColor="Black" FontSize="Title" FontAttributes="Bold" HorizontalOptions="Center" Margin="20"></Label>
+                <ListView x:Name="lvwOverview" Grid.Row="1" RowHeight="100">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <StackLayout Grid.Column="0" VerticalOptions="Center" Margin="15">
+                                        <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="Black"/>
+                                    </StackLayout>
+                                    <Image Source="{Binding image.Url}" WidthRequest="100" HeightRequest="100" Grid.Column="1" VerticalOptions="Center" Margin="10" HorizontalOptions="End"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

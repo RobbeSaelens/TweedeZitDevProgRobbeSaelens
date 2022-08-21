@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Detail"
+             x:Class="TweedeZitDevProgRobbeSaelens.Views.BreedsDetailPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblName" TextColor="Black" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Margin="10"/>
+            <Label Text="Temperament:" TextColor="Black" Margin="20,0,0,0" FontAttributes="Bold"/>
+            <Label x:Name="lblTemperament" TextColor="Black" Margin="20,0,0,0"/>
+            <Label Text="Lifespan:" TextColor="Black" Margin="20,0,0,0" FontAttributes="Bold"/>
+            <Label x:Name="lblLife" TextColor="Black" Margin="20,0,0,0"/>
+            <Label Text="Weight: (kg)" TextColor="Black" Margin="20,0,0,0" FontAttributes="Bold"/>
+            <Label x:Name="lblWeight" TextColor="Black"  Margin="20,0,0,0"/>
+            <Label Text="Height: (cm)" TextColor="Black" Margin="20,0,0,0" FontAttributes="Bold"/>
+            <Label x:Name="lblHeight" TextColor="Black" Margin="20,0,0,0"/>
+            <Image x:Name="Img" Aspect="AspectFill" HeightRequest="250" Margin="15" />
+            <Button x:Name="btnBack" Text="GO BACK" Margin="5" BackgroundColor="#aeb0b5" TextColor="#323a45" Clicked="btnBack_Clicked_1" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

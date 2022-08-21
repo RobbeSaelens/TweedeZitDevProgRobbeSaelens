@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Home" Icon="home.png"
+             x:Class="TweedeZitDevProgRobbeSaelens.Views.StartPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="The dog app" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Title" TextColor="#212121" Padding="20"></Label>
+            <Image x:Name="DogImg" Aspect="AspectFill" Margin="20" HeightRequest="200"/>
+            <Label Text="Dogs have been around humans for many years – they were the first species to be domesticated. For over 1000 years, humans have been breeding dogs to have specific physical 
+                   attributes or behaviors." FontAttributes="Italic" HorizontalOptions="Start" Margin="20" TextColor="#212121"></Label>
+
+            <Label Text="This is why today there are more than 330 different breeds of dogs. Some are even smaller than cats, while others, like the English Mastiff, are much bigger than humans." 
+                   FontAttributes="Italic" HorizontalOptions="Start" Margin="20" TextColor="#212121"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

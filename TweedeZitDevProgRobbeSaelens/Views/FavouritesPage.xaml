@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False" Title="My dogs" Icon="Favourites.png"
+             x:Class="TweedeZitDevProgRobbeSaelens.Views.FavouritesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Favourites" TextColor="Black" FontSize="Title" FontAttributes="Bold" Margin="0,20,0,0" HorizontalOptions="Center"></Label>
+            <RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
+                <CarouselView x:Name="lvwOverview" IndicatorView="indicatorView">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Frame HasShadow="True" BorderColor="#0b3d91" CornerRadius="5" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="10">
+                                    <StackLayout>
+                                        <Image Source="{Binding Image.Url}" WidthRequest="400" HeightRequest="300" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+            </RefreshView>
+            <Label x:Name="lblCounter" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" />
+            <IndicatorView x:Name="indicatorView"
+                   IndicatorColor="#aeb0b5"
+                   SelectedIndicatorColor="#105bd8"
+                   HorizontalOptions="Center"
+                           Margin="0,20,0,70"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Liker" Icon="Liker.png"
+             x:Class="TweedeZitDevProgRobbeSaelens.Views.DogLikerPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="20">
+            <Label Text="Like a dog" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Title" Margin="0,20,0,0" TextColor="Black"></Label>
+            <Image x:Name="ImgRandom" Margin="20,0,20,0" HeightRequest="350" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnFavorite" Padding="30" Text="Add"  CornerRadius="20"  Clicked="Button_Favourite_Clicked_1"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" />
+                <Button x:Name="btnRandom" Margin="8" Text="Next"  CornerRadius="20" Padding="30" Clicked="Button_RandomClicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="1" />
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
